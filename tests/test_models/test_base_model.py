@@ -7,6 +7,8 @@ from uuid import UUID
 import json
 import os
 import pycodestyle
+import inspect
+import pep8
 
 
 class test_basemodel(unittest.TestCase):
@@ -35,7 +37,7 @@ class test_basemodel(unittest.TestCase):
     def tearDown(self):
         try:
             os.remove('file.json')
-        except:
+        except Exception:
             pass
 
     def test_default(self):

@@ -3,6 +3,10 @@
 from tests.test_models.test_base_model import test_basemodel
 from models.city import City
 import pycodestyle
+import unittest
+import os
+from models.base_model import BaseModel
+import pep8
 
 
 class test_City(test_basemodel):
